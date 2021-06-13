@@ -15,16 +15,16 @@ const maxMarches = 100
 const app = new Application(mapSize)
 app.ticker.maxFPS = 60
 
-const ray = new Graphics()
-
 const objects = [...buildRectangles(10, mapSize, 200, 200), ...buildCircles(10, mapSize, 100)]
-
 objects.forEach((obj) => app.stage.addChild(obj.graphic))
-app.stage.addChild(ray)
-const text = new Text('Refresh the page to get new objects',{fontFamily : 'Arial', fontSize: 24, fill : 0xff3f00, align : 'center'});
 
+const text = new Text('Refresh the page to get new objects', {
+  fontFamily: 'Arial',
+  fontSize: 24,
+  fill: 0xff3f00,
+  align: 'center',
+})
 app.stage.addChild(text)
-document.body.appendChild(app.view)
 
 let mousePresent = false
 const interaction = new InteractionManager(app.renderer)
@@ -35,6 +35,9 @@ interaction.on('mouseout', () => {
 interaction.on('mouseover', () => {
   mousePresent = true
 })
+
+const ray = new Graphics()
+app.stage.addChild(ray)
 
 app.ticker.add(() => {
   ray.clear()
@@ -89,3 +92,5 @@ app.ticker.add(() => {
       .lineTo(marchedCoords.x, marchedCoords.y)
   }
 })
+
+document.body.appendChild(app.view)
