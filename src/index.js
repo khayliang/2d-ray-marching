@@ -1,4 +1,4 @@
-import { Application, Graphics, InteractionManager } from 'pixi.js'
+import { Application, Graphics, InteractionManager, Text } from 'pixi.js'
 import buildCircles from './buildCircles'
 import buildRectangles from './buildRectangles'
 import calcDistOfPointFromCircle from './utils/calcDistOfPointFromCircle'
@@ -21,7 +21,8 @@ const objects = [...buildRectangles(10, mapSize, 200, 200), ...buildCircles(10, 
 
 objects.forEach((obj) => app.stage.addChild(obj.graphic))
 app.stage.addChild(ray)
-
+let text = new Text('Refresh the page to get new objects',{fontFamily : 'Arial', fontSize: 24, fill : 0xff3f00, align : 'center'});
+app.stage.addChild(text)
 document.body.appendChild(app.view)
 
 let mousePresent = false
