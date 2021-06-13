@@ -7,7 +7,7 @@ module.exports = {
   devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Ant Colony',
+      title: '2D Ray Marching',
     }),
   ],
   output: {
