@@ -58,7 +58,7 @@ app.ticker.add(() => {
       count += 1
       if (count > maxMarches) break
 
-      if (marchedCoords.x - mouseCoords.x > 0 && marchedCoords.y - mouseCoords.y > 0) {
+      if (marchedCoords.x - mapSize.width > 0 && marchedCoords.y - mapSize.height > 0) {
         break
       }
 
