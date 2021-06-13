@@ -1,6 +1,6 @@
 export default (point, circleCenter, radius) => {
-  const {x: px, y: py} = point
-  const {x, y} = circleCenter
+  const { x: px, y: py } = point
+  const { x, y } = circleCenter
 
   const dx = Math.abs(x - px)
   const dy = Math.abs(y - py)
