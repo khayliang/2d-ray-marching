@@ -13,7 +13,7 @@ const startCoords = { x: 0, y: 0 }
 const maxMarches = 100
 
 const app = new Application(mapSize)
-app.ticker.maxFPS = 1
+app.ticker.maxFPS = 60
 
 const ray = new Graphics()
 
