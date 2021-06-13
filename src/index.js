@@ -4,6 +4,8 @@ import buildRectangles from './buildRectangles'
 import calcDistOfPointFromCircle from './utils/calcDistOfPointFromCircle'
 import calcDistOfPointFromRect from './utils/calcDistOfPointFromRect'
 
+import './index.css'
+
 const mapSize = {
   width: window.innerWidth,
   height: window.innerHeight,
