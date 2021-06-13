@@ -5,6 +5,8 @@ Inspired by [this video](https://www.youtube.com/watch?v=Cp5WWtMoeKg) by Sebasti
 
 This application demonstrates 2D ray marching performed on circles and rectangles. 
 
+Too lazy to add mobile support.
+
 # Setup
 ```
 git clone https://github.com/khayliang/2d-ray-marching.git
