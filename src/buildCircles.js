@@ -4,7 +4,7 @@ import getRandomXY from './utils/getRandomXY'
 
 export default function buildCircles(amt, mapBounds, maxRadius) {
   const circles = []
-  for (let i = 0; i != amt; i += 1) {
+  for (let i = 0; i !== amt; i += 1) {
     const circle = new Graphics()
     const circleCoords = getRandomXY(mapBounds)
     const circleRadius = Math.random() * maxRadius

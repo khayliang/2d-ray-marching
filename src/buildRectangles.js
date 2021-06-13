@@ -4,7 +4,7 @@ import getRandomXY from './utils/getRandomXY'
 
 export default (amt, mapBounds, maxWidth, maxHeight) => {
   const rects = []
-  for (let i = 0; i != amt; i += 1) {
+  for (let i = 0; i !== amt; i += 1) {
     const rect = new Graphics()
     const rectCoords = getRandomXY(mapBounds)
     const randomXY = getRandomXY({ width: maxWidth, height: maxHeight })

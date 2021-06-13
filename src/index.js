@@ -57,6 +57,7 @@ app.ticker.add(() => {
 
       let dist = Infinity
 
+      // eslint-disable-next-line
       objects.forEach((obj) => {
         const { type, coords, size } = obj
         if (type === 'rect') {
